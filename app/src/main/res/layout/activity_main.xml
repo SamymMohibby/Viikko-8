@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editFirstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editSecondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editFirstNumber" />
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="Summa"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/textSeeResult"
+        app:layout_constraintEnd_toStartOf="@+id/minusButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSecondNumber" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="Erotus"
+        android:text="-"
+        app:layout_constraintBottom_toTopOf="@+id/textSeeResult"
+        app:layout_constraintEnd_toStartOf="@+id/multiplyButton"
+        app:layout_constraintStart_toEndOf="@+id/plusButton"
+        app:layout_constraintTop_toBottomOf="@+id/editSecondNumber" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="Tulo"
+        android:text="X"
+        app:layout_constraintBottom_toTopOf="@+id/textSeeResult"
+        app:layout_constraintEnd_toStartOf="@+id/divideButton"
+        app:layout_constraintStart_toEndOf="@+id/minusButton"
+        app:layout_constraintTop_toBottomOf="@+id/editSecondNumber" />
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="70dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="Osamaara"
+        android:text="/"
+        app:layout_constraintBottom_toTopOf="@+id/textSeeResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/multiplyButton"
+        app:layout_constraintTop_toBottomOf="@+id/editSecondNumber" />
+
+    <EditText
+        android:id="@+id/textSeeResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSecondNumber"
+        app:layout_constraintVertical_bias="0.282" />
+</androidx.constraintlayout.widget.ConstraintLayout>
